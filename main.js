@@ -40,3 +40,20 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+/* play pausa video */
+var iframe = document.getElementById('video');
+
+// $f == Froogaloop
+var player = $f(iframe);
+
+// bind events
+var playButton = document.getElementById("play");
+playButton.addEventListener("click", function() {
+  player.api("play");
+});
+
+var pauseButton = document.getElementById("play");
+pauseButton.addEventListener("click", function() {
+  player.api("pause");
+});
