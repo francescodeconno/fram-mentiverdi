@@ -254,15 +254,15 @@ display: none;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
 }
 
-.torna > a{
+.torna a{
   color: #00FF00;
   text-decoration: none;
 }
-.torna > a:visited{
+.torna  a:visited{
   color: #00FF00;
   text-decoration: none;
 }
-.torna > a:visited{
+.torna a:visited{
   color: #00FF00;
   text-decoration: none;
 }
