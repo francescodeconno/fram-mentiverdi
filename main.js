@@ -45,6 +45,6 @@ function dragElement(elmnt) {
 $(document).ready(function(){
   $("#play").toggle(
     function(){$("#play").text('pause');},
-  });
+
 });
 
