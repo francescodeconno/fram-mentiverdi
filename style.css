@@ -1,0 +1,285 @@
+
+/**** GENERALITÀ****/
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'PT Mono', monospace;
+}
+/*SVG STANZA */
+.st0{fill:none;}
+.st1{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;}
+.st2{fill:url(#SVGID_2_);stroke:#1D1D1B;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;}
+.st3{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+.st4{fill:#00FF00;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+.st5{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:9.9998;}
+.st6{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:3;}
+.st7{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:3;}
+.st8{fill:#1D1D1B;}
+.st9{display:none;}
+.st10{display:inline;fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:3;}
+.st11{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+.st12{fill:#FFFFFF;stroke:#1D1D1B;stroke-miterlimit:10;}
+.st13{display:inline;fill:none;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+.st14{display:inline;fill:#000000;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+.st15{fill:#00FF00;stroke:#00FF00;stroke-miterlimit:10;}
+.st0{fill:none;}
+.st1{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;}
+.st2{fill:url(#SVGID_1_);stroke:#1D1D1B;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;}
+.st3{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+.st4{fill:#00FF00;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+.st5{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:9.9996;}
+.st6{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:3;}
+.st8{fill:#1D1D1B;}
+.st9{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+.st10{fill:#FFFFFF;stroke:#1D1D1B;stroke-miterlimit:10;}
+.st11{fill:#00FF00;stroke:#00FF00;stroke-miterlimit:10;}
+
+/*SVG_STANZA_INTERAZIONI*/
+polygon.st16{
+    transition: 0.3s;
+}
+
+ellipse.st16:hover polygon.st4  {
+  fill:#00FF00;
+}
+
+polygon.st16:hover {
+    fill:#00FF00;
+}
+
+#COPERTURA_PULSANTE_OPERA:hover .st6{
+  fill:#00FF00;
+  display: none;
+}
+#COPERTURA_PULSANTE_OPERA:hover .st7{
+display: none;
+}
+/**I MODAL**/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px;
+  padding-bottom: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.6); /* WHITE w/ opacity */
+  color:#00FF00; 
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 80%;
+  }
+
+   /* BOTTONE DI USCITA */
+   .close {
+    color: #00ff00;
+    float: right;
+    font-size: 80px;
+    }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+ /*** MODAL 1 BIOGRAFIA ***/
+
+ .bio{
+  grid-column-start:1;
+  grid-column-end:6;
+}
+.foto_contatti{
+  grid-column-start:7;
+  grid-column-end:10;
+
+}
+.pulsante_modal_1{
+  grid-column-start:10;
+}
+
+.item2bio{
+  text-align: left;
+}
+
+/*** MODAL 2 DESCRIZIONE ***/
+
+.pulsante_modal_2{
+  grid-column-start:10;
+  grid-column-end:10;
+
+}
+ .modal_2_scritta{
+   grid-column-start:4;
+   grid-column-end:8;
+}
+
+ .modal_2_testo{
+  grid-column-start:2;
+  grid-column-end:10;
+
+ }
+ .cls-1{
+  fill:#fff;
+}
+.cls-2{
+  fill:lime;stroke:lime;stroke-miterlimit:10;
+}
+
+
+/** MODAL 3 ENTRATA OPERA**/
+
+#pre_opera{
+  background: #00FF00;
+}
+.cls-nero{
+  fill:#000000;
+}
+.cls-bianco{
+  fill:#FFFFFF;
+}
+.modal_3_titolone{
+  grid-column-start:1;
+  grid-column-end:4;
+}
+
+.modal_3_descrizione_intro{
+  grid-column-start:5;
+  grid-column-end:10;
+
+}
+.modal_3_link{
+  grid-column-start:5;
+  grid-column-end:10;
+
+}
+.bottoni{
+  border: none;
+  background-color: #000000;
+  font-size:32px;
+  font-family: 'PT Mono', monospace;
+  color:#00FF00;
+  padding: 16px 32px; 
+  
+}
+
+.intro_opera{
+  color: #000000;
+}
+#intro{
+  font-size: 40px;
+  color: #000000;
+}
+
+/***** VIDEO DI SFONDO *****/
+  /* Style the video: 100% width and height to cover the entire window */
+  .video-background {
+    background: #00ff00;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+  }
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+  /*** IMMAGINE CHE SI MUOVE****/
+  #muovi {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+  }
+  
+  #muoviheader {
+    cursor: move;
+    z-index: 10;
+  }
+
+/*** FOOTER***/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#000000;
+  color:#00ff00;
+  text-align: center;
+  z-index: 15;
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+}
+
+.torna > a{
+  color: #00FF00;
+  text-decoration: none;
+}
+.torna > a:visited{
+  color: #00FF00;
+  text-decoration: none;
+}
+.torna > a:visited{
+  color: #00FF00;
+  text-decoration: none;
+}
+#play{
+  grid-column-start:1 ;
+  grid-column-end: 1;
+
+}
+
+#cambia{
+  grid-column-start:5 ;
+  grid-column-end: 6;
+
+}
+#torna{
+  grid-column-start:9 ;
+  grid-column-end: 9;
+
+}
+
