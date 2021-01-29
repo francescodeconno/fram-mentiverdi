@@ -44,7 +44,6 @@ function dragElement(elmnt) {
 /* play pausa video */
 $(document).ready(function(){
   $("#play").toggle(
-    function(){$("#play").text('pause');},
-
+    function(){$("#play").text('pause');}
 });
 
