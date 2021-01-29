@@ -42,18 +42,9 @@ function dragElement(elmnt) {
 }
 
 /* play pausa video */
-var iframe = document.getElementById('video');
-
-// $f == Froogaloop
-var player = $f(iframe);
-
-// bind events
-var playButton = document.getElementById("play");
-playButton.addEventListener("click", function() {
-  player.api("play");
+$(document).ready(function(){
+  $("#play").toggle(
+    function(){$("#play").text('pause');},
+  });
 });
 
-var pauseButton = document.getElementById("play");
-pauseButton.addEventListener("click", function() {
-  player.api("pause");
-});
