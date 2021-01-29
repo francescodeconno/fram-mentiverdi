@@ -42,8 +42,8 @@ function dragElement(elmnt) {
 }
 
 /* play pausa video */
-$(document).ready(function(){
-  $("#play").toggle(
-    function(){$("#play").text('pause');}
+$(document).ready(function()
+{
+  $("#play").toggle(function(){$("#play").text('play');}
 });
 
