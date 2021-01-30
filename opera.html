@@ -14,15 +14,44 @@
 
 <div class="video-background">
     <div class="video-foreground">
-      <iframe id="video" src="https://player.vimeo.com/video/506305271?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+      <iframe id="video" src="https://player.vimeo.com/video/506305271?autoplay=1&loop=1&title=0&byline=0&portrait=0api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
       </iframe>
+      <script src="https://gist.github.com/jyr/1420508.js"></script>
+      <script>
+        var iframe = document.getElementById('video');
+
+// $f == Froogaloop
+var player = $f(iframe);
+function myFunction() {
+  var x = document.getElementById("#play");
+  var pauseButton = document.getElementById("#play");
+  pauseButton.addEventListener("click", function() {
+  player.api("pause");
+  if (x.innerHTML === "Pausa") { 
+    x.innerHTML = "Play";
+});
+}
+else {
+    x.innerHTML = "Pausa";
+  }
+}
+
+
+var pauseButton = document.getElementById("pause-button");
+pauseButton.addEventListener("click", function() {
+  player.api("pause");
+});
+      </script>
+
 </div>
 </div>
 <div id ="muovi">
    <img src="img/trascina.png" id="muoviheader" alt="trascina" width="auto" height="auto">
 </div>
 <div class="footer">
-    <span id="play">Pausa</span>
+  <div id="play">
+    <span >Pausa</span>
+  </div>
     <span id="cambia" >Cambia</span>
 <div id="torna">
 <a href="index.html"><span>Home</span></a>
