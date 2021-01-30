@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="shortcut icon" href="favicon.ico"/>
 <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -14,38 +15,28 @@
 
 <div class="video-background">
     <div class="video-foreground">
-      <iframe id="video" src="https://player.vimeo.com/video/506305271?autoplay=1&loop=1&title=0&byline=0&portrait=0api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+      <iframe id="video" src="https://player.vimeo.com/video/506305271?autoplay=1&loop=1&title=0&byline=0&portrait=0&api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
       </iframe>
-<script>
-
-var iframe = document.getElementById('video');
-
-// $f == Froogaloop
-var player = (iframe);
-var x = document.getElementById("#play")
-var playButton = document.getElementById("#play");
-playButton.addEventListener("click", function() {
-  player.api("play");
-  x.innerHTML("Pause");
-});
-</script>
-
-</div>
+    </div>
 </div>
 <div id ="muovi">
    <img src="img/trascina.png" id="muoviheader" alt="trascina" width="auto" height="auto">
 </div>
 <div class="footer">
-  <div id="play">
-    <span >Pausa</span>
+  <div id="playDiv">
+    <span id="playText">Pausa</span>
   </div>
-    <span id="cambia" >Cambia</span>
-<div id="torna">
-<a href="index.html"><span>Home</span></a>
+  <div id="cambia">
+    <span id="cambiaText" >Cambia</span>
+  </div>
+  <div id="torna">
+    <a href="index.html"><span>Home</span></a>
+  </div>
 </div>
-  </div>
+
 <script src="main.js"></script>
 <script src="jqer.js"></script>
+<script src="videoControls.js"></script>
 
 </body>
 </html>
