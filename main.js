@@ -41,5 +41,12 @@ function dragElement(elmnt) {
   }
 }
 
-
+function myFunction() {
+  var x = document.getElementById("#play");
+  if (x.innerHTML === "Pausa") {
+    x.innerHTML = "Play";
+  } else {
+    x.innerHTML = "Pausa";
+  }
+}
 
