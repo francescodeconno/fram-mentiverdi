@@ -16,8 +16,7 @@
     <div class="video-foreground">
       <iframe id="video" src="https://player.vimeo.com/video/506305271?autoplay=1&loop=1&title=0&byline=0&portrait=0api=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
       </iframe>
-      <script src="https://gist.github.com/jyr/1420508.js"></script>
-      <script>
+<script>
   var iframe = document.getElementById('video');
 
 // $f == Froogaloop
@@ -25,14 +24,9 @@ var player = $f(iframe);
 var x = document.getElementById("#play")
 var playButton = document.getElementById("#play");
 playButton.addEventListener("click", function() {
-  player.api("play");x.innerHTML("Pause");
+  player.api("play");
+  x.innerHTML("Pause");
 });
-
-
-
-
-
-
       </script>
 
 </div>
